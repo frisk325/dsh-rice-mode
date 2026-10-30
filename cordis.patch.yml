@@ -1,0 +1,4 @@
+# dsh-rice-mode —— 宿主侧只挂一行，逻辑在 index.js 里自己注册
+- insert:
+    - id: dsh-rice-mode
+      name: dsh-rice-mode

@@ -1,0 +1,19 @@
+{
+  "name": "dsh-rice-mode",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "description": "无限大白饭模式：三档切换，向系统提示注入「不省 token」的指令。0=关 1=本轮 2=一直开。",
+  "keywords": ["dsh-plugin", "deepseek-harness"],
+  "files": ["index.js", "client.js", "cordis.patch.yml"],
+  "exports": {
+    ".": { "default": "./index.js" },
+    "./client": "./client.js"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "inject": [] }
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
